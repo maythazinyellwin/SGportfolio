@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Poppins',sans-serif;
+            background-color: black;
+            color: aliceblue;
+        }
+        h1{
+            text-align: center;
+            margin-top: 150px;
+            font-size: 60px;
+            color: rgb(17, 183, 128);
+        }
+        .skills-area{
+            display: flex;
+            flex-direction: column;
+            padding: 0 20%;
+        }
+        .skill{
+            position: relative;
+            margin-bottom: 40px;
+        }
+        .skill-title{
+            font-size: 20px;
+            margin-bottom: 30px ;
+            color: orchid;
+        }
+        .skill-bar{
+            width: 10px auto;
+            background: black;
+            height: 10px;
+            z-index: -1;
+            border-radius: 40px;
+            position: absolute;
+        }
+        .skill-fill{
+            background: gray;
+            height: 30px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 30px;
+            overflow: hidden;
+        }
+        .skill-percent{
+            font-size: 15px;
+        }
+        .html{
+            animation: html 2s;
+            width: 90%;
+        }
+        .css{
+            animation: css 2s;
+            width: 85%;
+        }
+        .bootstrap{
+            animation: bootstrap 2s;
+            width: 70%;
+        }
+        @keyframes html{
+            from{
+                width: 0;
+            }
+            to{
+                width: 90%;
+            }
+        }
+        @keyframes css{
+            from{
+                width: 0;
+            }
+            to{
+                width: 85%;
+            }
+        }
+          @keyframes bootstrap{
+            from{
+                width: 0;
+            }
+            to{
+                width: 70%;
+            }
+          }  
+        
+        @media only screen and (max-width: 750px){
+            .skills-area{
+                padding: 0 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="skill.html">Skill</a>
+            <a href="education.html">Education</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+        <h1>My Skills</h1>
+        <div class="Skills-area">
+            <div class="skill">
+                <div class="skill-title">HTML</div>
+                <div class="skill-bar"></div>
+                <div class="html skill-fill">
+                    <span class="skill-percent">90%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-title">CSS</div>
+                <div class="skill-bar"></div>
+                <div class="css skill-fill">
+                    <span class="skill-percent">85%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-title">BOOTSTRAP</div>
+                <div class="skill-bar"></div>
+                <div class="bootstrap skill-fill">
+                    <span class="skill-percent">70%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
